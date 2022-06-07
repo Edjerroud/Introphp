@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inscription</h1>
+<form method ="post" action = "target.php">
+    <div class ="parent">
+    <p class= "form">
+       <label for="prenom">entrez votre nom:</label>
+       <input type ="text" name ="nom" id="nom"/> <br><br>
+       <label for="prenom">entrez votre prénom :</label>
+       <input type ="text" name ="prenom" id="prenom"/> <br><br>
+       <label for="prenom">entrez votre date de naissance:</label>
+       <input type ="text" name ="date_de_naissance" id="date_de_naissance"/> <br><br>
+       <label for="prenom">entrez votre e-mail:</label>
+       <input type ="text" name ="e-mail" id="e-mail"/> 
+
+       <?php if (isset($errors['nom'])) { ?>
+       <p><?=$errors['nom'];?></p>
+       <?php } ?>
+       <?php if (isset($errors['prenom'])) { ?>
+       <p><?=$errors['prenom'];?></p>
+       <?php } ?>
+       <?php if (isset($errors['date_de_naissance'])) { ?>
+       <p><?=$errors['date_de_naissance'];?></p>
+       <?php } ?>
+       <?php if (isset($errors['email'])) { ?>
+       <p><?=$errors['email'];?></p>
+       <?php } ?>
+    </p> 
+    <P class="btn">
+       <input  type = "submit" value = "valider">
+    </p>  
+</div>
+   
+
+    <?php
+       if (isset($_POST['e-mail'])){
+        echo $_POST['e-mail'] ;}
+    ?>
+    
+</body>
+</html>

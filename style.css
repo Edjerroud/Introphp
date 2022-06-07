@@ -1,0 +1,31 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11.5%;
+    margin-left: 25%;
+    background-color:rgb(244, 246, 247);
+    width :30%;
+    -webkit-box-shadow: 9px 5px 7px 3px rgba(0,0,0,0.34); 
+box-shadow: 9px 5px 7px 3px rgba(0,0,0,0.34);
+     
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    background-color:rgb(240, 244, 246);
+    border: 4px #061621;
+    border-radius: 0px 7px 0px 7px;
+    -webkit-box-shadow: 9px 5px 7px 3px rgba(0,0,0,0.34); 
+    box-shadow: 9px 5px 7px 3px rgba(0,0,0,0.34);
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(244, 246, 247);
+}
